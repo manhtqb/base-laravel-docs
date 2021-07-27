@@ -1,4 +1,3 @@
-# Cấu trúc thư mục
 > app
 
 Chứa các thư mục chính của dự án
@@ -23,3 +22,14 @@ Thư mục làm việc chính với các requests
 - `Middleware`: chứa các file middleware như là phần trung gian giữa request và controller
 - `Requests`: chứa các  file request để validation
 
+4.  **Model**
+
+Folder chứa các file model-file tương tác trực tiếp với Database (**M** trong **MVC**)
+
+5. **Providers**
+
+Folder chứa các class provider của dự án: là nơi khởi tạo tất cả các ứng dụng trong app.
+
+- `AppServiceProvider`: khởi tạo chung. Có thể sử dụng để register những app liên quan dịch vụ bên thứ 3 (Firebase, AWS)
+- `AuthServiceProvider`: nơi register các policies,  authentication / authorization services.
+- `RouteServiceProvider` (quan trọng): nơi định nghĩa việc binding router, trong trường hợp có nhiều file router thì đây là nơi định nghĩa middleware/namespace...

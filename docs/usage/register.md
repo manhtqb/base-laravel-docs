@@ -1,0 +1,1 @@
+> Chức năng register/email confirm
