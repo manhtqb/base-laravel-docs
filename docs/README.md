@@ -1,3 +1,2 @@
-# Headline
+# Code base Laravel và hướng dẫn sử dụng
 
-> An awesome project.
